@@ -1,0 +1,77 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+}
+
+.appJs {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 80px;
+    border-style: solid;
+    border-color: yellow;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(63, 81, 181);
+}
+
+#navBar {
+    border-style: dotted;
+    border-color: red;
+    grid-column: span 4;
+    height: 90px;
+    width: 100%;
+}
+
+.displayMain {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 0px;
+    border-style: dotted;
+    border-color: black;
+    height: 500px;
+    grid-row: span 4;
+    grid-column: span 4;
+}
+
+.innerDisplayMainLeft {
+    grid-column: span 1;
+    border-style: solid;
+    border-color: pink;
+    background-image: url("http://2.bp.blogspot.com/-2eqNNzBYLgM/UEW5Uy6CyGI/AAAAAAAAER8/8XQYlGYkHGM/s1600/photographer+smile+...+animated+gif+photo+with+flash+...+graphic+art+bw+images+pics+animated+gifs+background+mobile+screensaver+free+download+photographer+3D+HD+1.gif");
+    background-color: #cccccc;
+    background-size: 300px 450px;
+    z-index: -1;
+}
+
+.innerDisplayMainRight {
+    grid-column: span 4;
+    border-style: solid;
+    border-color: green;
+    z-index: 1;
+    padding-right: 50px;
+    padding-left: 70px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    height: 500px;
+}
+
+.history {
+    color: white;
+    text-align: left;
+}
+
+p {
+    color: white;
+}
+
+body {
+    background-color: rgb(63, 81, 181);
+}
