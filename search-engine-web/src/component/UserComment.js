@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-class Message extends Component {
+class UserComment extends Component {
   render() {
     return (
       <div>
@@ -26,4 +26,4 @@ function mapStateToProps(state) {
     note: state.messages,
   };
 }
-export default connect(mapStateToProps)(Message);
+export default connect(mapStateToProps)(UserComment);

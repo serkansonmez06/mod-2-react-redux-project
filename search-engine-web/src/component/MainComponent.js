@@ -7,7 +7,7 @@ import HistoryComponent from "./HistoryComponent";
 import { Route, Switch } from "react-router-dom";
 import NotFound from "./NotFound";
 import { Link } from "react-router-dom";
-import Message from "./Message";
+import UserComment from "./UserComment";
 
 class MainComponent extends Component {
   render() {
@@ -27,7 +27,7 @@ class MainComponent extends Component {
               <Navigation>
                 <Link to="/Contact">Contact</Link>
                 <Link to="/History">History of Photograpy</Link>
-                <Link to="/Message">Messages</Link>
+                <Link to="/UserComment">Users Comment</Link>
               </Navigation>
             </Header>
             <Drawer
@@ -67,7 +67,7 @@ class MainComponent extends Component {
               <Route exact path="/Search-Image" component={SearchComponent} />
               <Route exact path="/Contact" component={ContactComponent} />
               <Route exact path="/History" component={HistoryComponent} />
-              <Route exact path="/Message" component={Message} />
+              <Route exact path="/UserComment" component={UserComment} />
               <Route component={NotFound}></Route>
             </Switch>
           </div>
