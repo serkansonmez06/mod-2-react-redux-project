@@ -1,1 +1,2 @@
-export const GET_IMAGE = "GET_IMAGE "
+export const DEVELOPER_NAME = "DEVELOPER_NAME "
+export const ADD_CONTACT_MESSAGE = "ADD_CONTACT_MESSAGE "

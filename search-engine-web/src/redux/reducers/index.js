@@ -1,9 +1,13 @@
-import { combineReducers } from 'redux';
-import getImageReducer from './getImageReducer'
+import {
+    combineReducers
+} from 'redux';
+import developerNameReducer from './developerNameReducer.js'
+//combine reducer together.. we will have more reducers
+//call combineReducer from redux
 
-const rootReducer = combineReducers({
-    getImageReducer,
+const reducers = combineReducers({
+    developerNameReducer,
 })
 
 
-export default rootReducer;
+export default reducers;

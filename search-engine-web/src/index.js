@@ -6,21 +6,19 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
 //router operation needs browserrouter from react router dom
+import 'alertifyjs/build/css/alertify.css';
 import 'react-mdl/extra/material.css';
-import 'react-mdl/extra/material.js'; // this is for nav bar
-// import 'alertifyjy/build/css/alertifyjy.min.css'
+import 'react-mdl/extra/material.js';
 import {Provider} from 'react-redux'
-import configureStore from './redux/reducers/configureStore'
+import store from './redux/reducers/store'
 
-const store = configureStore();
+
 
 ReactDOM.render(
   <Provider store={store}>
 
 <BrowserRouter>
-  
   <App />
-
 </BrowserRouter>
   </Provider>
  ,
