@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Button, Form, FormGroup, Label, Input } from "reactstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
-import alertifyjs from "alertifyjs"
+import alertifyjs from "alertifyjs";
 import { connect } from "react-redux";
 import { addContactMessage } from "../redux/actions/actionCategories";
 // import 'alertifyjy/build/css/alertifyjy.min.css'
@@ -27,12 +27,11 @@ class ContactComponent extends Component {
       email: "",
       city: "",
       message: "",
-    }
-    );
+    });
 
     this.props.dispatch(addContactMessage(this.state));
 
-    alertifyjs.success("Sending",1.5);
+    alertifyjs.success("Sending", 1.5);
   };
 
   render() {

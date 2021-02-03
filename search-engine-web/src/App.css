@@ -40,17 +40,19 @@ span {
     height: 500px;
     grid-row: span 4;
     grid-column: span 4;
+    padding-left: 300px;
 }
 
 .innerDisplayMainLeft {
-    background-image: url("http://2.bp.blogspot.com/-2eqNNzBYLgM/UEW5Uy6CyGI/AAAAAAAAER8/8XQYlGYkHGM/s1600/photographer+smile+...+animated+gif+photo+with+flash+...+graphic+art+bw+images+pics+animated+gifs+background+mobile+screensaver+free+download+photographer+3D+HD+1.gif");
-    background-size: 350px 500px;
+    position: fixed;
+    top: 80px;
+    left: 0;
 }
 
 .innerDisplayMainRight {
     grid-column: span 4;
     z-index: 1;
-    padding-right: 50px;
+    padding-right: 0px;
     padding-left: 70px;
     padding-bottom: 0px;
     padding-top: 10px;
@@ -79,20 +81,16 @@ span {
 .messageTitle {
     font-size: 35px;
     font-style: bold;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 #searchImgDisplay {
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
 p h1 {
     color: white;
     font-family: 'Times New Roman', Times, serif;
-}
-
-body {
-    background-color: rgb(63, 81, 181);
 }
 
 .notfound {
@@ -113,6 +111,7 @@ body {
     display: grid;
     grid-template-columns: repeat(1fr 1fr);
     margin-top: -10px;
+    padding-left: 40px;
 }
 
 .form {

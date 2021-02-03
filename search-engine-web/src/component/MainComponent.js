@@ -19,7 +19,7 @@ class MainComponent extends Component {
             <Header
               title={
                 <Link style={{ textDecoration: "none", color: "white" }} to="/">
-                  Capture the Image
+                  Shutter Up
                 </Link>
               }
               scroll
@@ -33,7 +33,7 @@ class MainComponent extends Component {
             <Drawer
               title={
                 <Link style={{ textDecoration: "none", color: "grey" }} to="/">
-                  Capture the Image
+                  Shutter Up
                 </Link>
               }
             >
@@ -51,7 +51,13 @@ class MainComponent extends Component {
         </div>
 
         <div className="displayMain">
-          <div className="innerDisplayMainLeft"></div>
+          <div className="innerDisplayMainLeft">
+            <img
+              src="http://2.bp.blogspot.com/-2eqNNzBYLgM/UEW5Uy6CyGI/AAAAAAAAER8/8XQYlGYkHGM/s1600/photographer+smile+...+animated+gif+photo+with+flash+...+graphic+art+bw+images+pics+animated+gifs+background+mobile+screensaver+free+download+photographer+3D+HD+1.gif"
+              height="530px"
+              width="260px"
+            ></img>
+          </div>
           <div className="innerDisplayMainRight">
             <Switch>
               <Route

@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import alertifyjs from "alertifyjs"
+import alertifyjs from "alertifyjs";
 import { FormGroup } from "reactstrap";
 import "../App.css";
 class SearchComponent extends Component {
   state = {
     baseUrl: "https://api.unsplash.com/search/photos/?per_page=5&client_id=",
-    accessKey: "age-dmYcxYinzenv4oHzL4f9_NJWqU3otOzhdlhAQYA",
+    accessKey: "",
     query: "&query=",
     inputValue: "",
     searchUrl: "",
@@ -30,14 +30,12 @@ class SearchComponent extends Component {
     this.setState({ searchUrl: tempSearchURL }, () => {
       //console.log(this.state.searchUrl);
     });
-    
   };
 
   handleSubmit = (event) => {
     //console.log(this.state.inputValue);
     this.getImages();
     event.preventDefault();
-    
   };
 
   handleReset = () => {
@@ -46,7 +44,7 @@ class SearchComponent extends Component {
       searchUrl: "",
       images: [],
     });
-    alertifyjs.success("Reseting",1.5);
+    alertifyjs.success("Reseting", 1.5);
     console.log("reset");
   };
 
@@ -87,19 +85,16 @@ class SearchComponent extends Component {
             reset
           </button>
         </form>
-        <ul className="displayImg">
+        <ul id="searchImgDisplay">
           {this.state.images.map((item, i) => (
-            <h1 key={i} id="searchImgDisplay">
+            <h1 key={i}>
               <img src={item.urls.small} alt="displayImage"></img>
             </h1>
           ))}
         </ul>
-  
       </div>
     );
   }
 }
 
 export default SearchComponent;
-
-

@@ -10,5 +10,3 @@ export const addContactMessage = (message) => ({
   type: actionTypes.ADD_CONTACT_MESSAGE,
   payload: message,
 });
-
-

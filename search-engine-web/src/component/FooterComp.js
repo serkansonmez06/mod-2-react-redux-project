@@ -56,7 +56,7 @@ function FooterComp() {
       <div className="footer-copyright text-center">
         <Container fluid>
           <span>
-            &copy; {new Date().getFullYear()} Copyright: Capture the Image Inc.
+            &copy; {new Date().getFullYear()} Copyright: Shutter Up Inc.
           </span>
         </Container>
       </div>
