@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
+import { connect } from "react-redux"; //import connect
 import { developerName } from "../redux/actions/actionCategories";
 class AboutMeComponent extends Component {
-  componentDidMount() {
-    this.props.dispatch(developerName());
+  componentDidMount() { //executed after the first render and state updates should occur
+    this.props.dispatch(developerName());//dispatch actions and trigger state changes to the store
   }
   render() {
     return (
@@ -11,7 +11,7 @@ class AboutMeComponent extends Component {
         <p className="history">
           <span>
             {this.props.devName} {this.props.devLast}
-          </span>{" "}
+          </span>
           is a full-stack developer with excellent technical expertise (HTML5,
           CSS3, JS - ES6, REACT) with the ability to analyze and solve
           problems. Write, analyze, review, and rewrite programs, using workflow
@@ -30,11 +30,13 @@ class AboutMeComponent extends Component {
 
 function mapStateToProps(state) {
   // console.log(state.devloperNameReducer)
-  return {
+  //mapStateToProps use to provide the store data to component
+  //connect state with props with this func
+  return { // state comes from reducer
     devName: state.name,
     devLast: state.lastName,
-  }; //we just want to display counterReducer
-  //state value cames from counterReducer
+  }; 
+  //state value cames from developerNameReducer
 }
 
 export default connect(mapStateToProps)(AboutMeComponent);

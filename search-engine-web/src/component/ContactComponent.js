@@ -4,7 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import alertifyjs from "alertifyjs";
 import { connect } from "react-redux";
 import { addContactMessage } from "../redux/actions/actionCategories";
-// import 'alertifyjy/build/css/alertifyjy.min.css'
+
+
+
 class ContactComponent extends Component {
   state = {
     name: "",
@@ -29,9 +31,11 @@ class ContactComponent extends Component {
       message: "",
     });
 
-    this.props.dispatch(addContactMessage(this.state));
+    this.props.dispatch(addContactMessage(this.state)); // dispatch props from action categories
+    //updates addContactMessage state and userComment get info from reducer
+    //first import actionTypes.
 
-    alertifyjs.success("Sending", 1.5);
+    alertifyjs.success("Sending", 1.5); //method return a box bottom right
   };
 
   render() {

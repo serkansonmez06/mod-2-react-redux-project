@@ -1,6 +1,5 @@
 import React from "react";
-// import 'font-awesome/css/font-awesome.min.css';
-import { Container, Footer } from "mdbreact";
+import { Container, Footer } from "mdbreact"; //imported icons
 import "../App.css";
 function FooterComp() {
   return (
@@ -45,8 +44,8 @@ function FooterComp() {
             <a
               className="btn-floating btn-sm btn-li mx-1"
               href="https://www.linkedin.com/in/serkan-sonmez-mba/"
-              target="_blank"
-              rel="noreferrer"
+              target="_blank" // open browers in new tab
+              rel="noreferrer" //improve performance and prevent security vulnerabilities
             >
               <i className="fa fa-linkedin"> </i>
             </a>
