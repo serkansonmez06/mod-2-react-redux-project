@@ -11,6 +11,7 @@ import "react-mdl/extra/material.css";
 import "react-mdl/extra/material.js";
 import { Provider } from "react-redux";
 import store from "./redux/reducers/store";
+
 //The Provider makes the Redux store available to 
 //any nested components that have been wrapped in the connect() function. 
 
@@ -18,7 +19,7 @@ import store from "./redux/reducers/store";
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <App /> 
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")

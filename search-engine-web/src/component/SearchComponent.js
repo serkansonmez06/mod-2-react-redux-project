@@ -5,7 +5,7 @@ import "../App.css";
 class SearchComponent extends Component {
   state = {
     baseUrl: "https://api.unsplash.com/search/photos/?per_page=5&client_id=",
-    accessKey: "age-dmYcxYinzenv4oHzL4f9_NJWqU3otOzhdlhAQYA",
+    accessKey: "",
     query: "&query=",
     inputValue: "",
     searchUrl: "",
@@ -40,7 +40,7 @@ class SearchComponent extends Component {
       searchUrl: "",
       images: [],
     });
-    alertifyjs.success("Reseting", 1.5); // framwork to create notification
+    alertifyjs.success("Reseting", 1.5); // framework to create notification
     //each click invokes alertify method
     // console.log("reset");
   };
