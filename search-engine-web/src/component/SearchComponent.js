@@ -5,7 +5,7 @@ import "../App.css";
 class SearchComponent extends Component {
   state = {
     baseUrl: "https://api.unsplash.com/search/photos/?per_page=5&client_id=",
-    accessKey: "",
+    accessKey: "age-dmYcxYinzenv4oHzL4f9_NJWqU3otOzhdlhAQYA",
     query: "&query=",
     inputValue: "",
     searchUrl: "",

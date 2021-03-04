@@ -10,9 +10,9 @@ class AboutMeComponent extends Component {
       <div>
         <p className="history">
           <span>
-            {this.props.devName} {this.props.devLast}
+            {this.props.devName} {this.props.devLast} {' '}
           </span>
-          is a full-stack developer with excellent technical expertise (HTML5,
+           is a full-stack developer with excellent technical expertise (HTML5,
           CSS3, JS - ES6, REACT) with the ability to analyze and solve
           problems. Write, analyze, review, and rewrite programs, using workflow
           chart and diagram, and applying knowledge of computer capabilities,

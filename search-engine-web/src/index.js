@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 //router operation needs browserrouter from react router dom
 import "alertifyjs/build/css/alertify.css";
 import "react-mdl/extra/material.css";
