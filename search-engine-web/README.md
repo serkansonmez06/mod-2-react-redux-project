@@ -1,8 +1,9 @@
 #React-Redux Photo-Search-Engine
 
-User can type and search kind of photo. App will diplay 5 photos each times. User can reset the input field and display. If users want to leave message through the app, they can and they are able to their comments in user-comment component! Their message will display in different page right away after click on send button.
+Users can type and search for any kind of photo. The app will display 5 photos each time. Users can reset the input field and displayed photos on the screen. If users want to leave a message through the app, they can leave a message and they are able to see their comments in the user-comment component! A user's comments will display the user's name and his/her message or messages. Their message will display on a different page right away after clicking on the send button. Users can click on Facebook, Linkedin, Github, and google icon to visit developer's personal social media accounts.
 
 Table of contents
+
 - Search
 - Contact
 - User Comments
@@ -30,13 +31,11 @@ dependencies:
         "simple-react-footer": "^1.0.2",
         "web-vitals": "^0.2.4"
 
-
 Setup
 To run this project, install it locally using npm:
 
 $ cd ../Documents
 $ npm install npm start
-
 
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
